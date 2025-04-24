@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Marjo Garden</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <header>
+    <h1>Marjo Garden</h1>
+    <p>Tu espacio natural en casa</p>
+  </header>
+
+  <nav class="navbar navbar-expand-lg navbar-light bg-light">
+    <div class="container-fluid">
+      <a class="navbar-brand" href="#">Inicio</a>
+      <div class="collapse navbar-collapse justify-content-center" id="navbarNav">
+        <ul class="navbar-nav">
+          <li class="nav-item">
+            <a class="nav-link" href="#productos">Productos</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#tabla">Precios</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#contacto">Contacto</a>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+
+  <div id="productos" class="container my-4">
+    <h2>Nuestras plantas</h2>
+    <div class="row">
+      <div class="col-md-4">
+        <img src="img/jade.jpeg" class="img-fluid" alt="jade">
+        <h5>Jade</h5>
+        <p>Una planta de exterior que necesita mucha luz solar y poco riego, esto la hace fácil de cuidar.</p>
+      </div>
+      <div class="col-md-4">
+        <img src="img/junipero.jpeg" class="img-fluid" alt="junipero">
+        <h5>Junípero Nana</h5>
+        <p>Una planta que requiere luz solar directa y riego moderado, pero evitando encharcamientos porque podría dañar su raíz.</p>
+      </div>
+      <div class="col-md-4">
+        <img src="img/cactus.jpeg" class="img-fluid" alt="cactus">
+        <h5>Cactus de Navidad</h5>
+        <p>Un cactus que florece en diciembre, requiere luz indirecta, lo cual lo hace adecuado para estar en interiores.</p>
+      </div>
+    </div>
+  </div>
+
+  <div id="tabla" class="container my-4">
+    <h2>Tabla de Precios y Productos</h2>
+    <table class="table table-bordered">
+      <thead>
+        <tr>
+          <th>Producto</th>
+          <th>Edad</th>
+          <th>Precio</th>
+          <th>Disponibilidad</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td>Jade</td>
+          <td>2 años</td>
+          <td>$50.000</td>
+          <td>Disponible</td>
+        </tr>
+        <tr>
+          <td>Junípero Nana</td>
+          <td>8 años</td>
+          <td>$100.000</td>
+          <td>Disponible</td>
+        </tr>
+        <tr>
+          <td>Cactus de Navidad</td>
+          <td>1 año</td>
+          <td>$30.000</td>
+          <td>Disponible</td>
+        </tr>
+      </tbody>
+    </table>
+  </div>
+
+  <div id="contacto" class="container my-4">
+    <h3>Contacto</h3>
+    <p><strong>Correo:</strong> jgaitan6@gmail.com</p>
+    <p><strong>Teléfono:</strong> 3000000007</p>
+    <p><strong>Horario:</strong> Lunes a viernes de 8:00 a.m. a 4:00 p.m.</p>
+
+    <h4>Formulario de contacto</h4>
+    <form>
+      <div class="mb-3">
+        <label for="nombre" class="form-label">Nombre completo</label>
+        <input type="text" class="form-control" id="nombre" name="nombre" required autofocus>
+      </div>
+      <div class="mb-3">
+        <label for="email" class="form-label">Correo electrónico</label>
+        <input type="email" class="form-control" id="email" name="email" required>
+      </div>
+      <div class="mb-3">
+        <label for="fecha" class="form-label">Fecha preferida para ser contactado</label>
+        <input type="date" class="form-control" id="fecha" name="fecha" required>
+      </div>
+      <div class="mb-3">
+        <label for="mensaje" class="form-label">Mensaje</label>
+        <textarea class="form-control" id="mensaje" name="mensaje" rows="4" required></textarea>
+      </div>
+      <button type="submit" class="btn btn-success">Enviar</button>
+    </form>
+  </div>
+
+  <footer>
+    <p>&copy; 2025 Marjo Garden. Todos los derechos reservados.</p>
+  </footer>
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>
